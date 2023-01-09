@@ -1,9 +1,9 @@
 local config = {}
 
 function config.null_ls()
-  local globals = require("core.global")
-  local formatter = globals.fotmatter
-  local linter = globals.linter
+	local globals = require("core.global")
+	local formatter = globals.fotmatter
+	local linter = globals.linter
 	local null_ls = require("null-ls")
 	local null_sources = function()
 		local source_return = {}
@@ -49,9 +49,9 @@ function config.null_ls()
 end
 
 function config.mason_null_ls()
-  local globals = require("core.global")
-  local formatter = globals.fotmatter
-  local linter = globals.linter
+	local globals = require("core.global")
+	local formatter = globals.fotmatter
+	local linter = globals.linter
 	-- Merge formatter and linter into one table
 	local formatter_linter = formatter
 	for i = 1, #linter do
