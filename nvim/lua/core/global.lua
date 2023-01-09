@@ -13,6 +13,7 @@ local LINTER = {
 	"revive",
 	"pylint",
 }
+local ENABLE_COC = true
 
 function global:load_variables()
 	self.is_mac = os_name == "Darwin"
@@ -28,6 +29,7 @@ function global:load_variables()
 	self.data_dir = string.format("%s/site/", vim.fn.stdpath("data"))
 	self.fotmatter = FORMATTER
 	self.linter = LINTER
+	self.enable_coc = ENABLE_COC
 end
 
 global:load_variables()
